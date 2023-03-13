@@ -1,10 +1,22 @@
 import React from "react";
+import styled from "styled-components";
 import Container from "../Container";
+import List from "./List";
 
-const Body = (props) =>{
+
+const BodyStyled = styled.div`
+    padding-top: 50px;
+    padding-bottom: 50px;
+`;
+
+
+
+const Body = () =>{
     return (
         <Container>
-            {props.children}
+            <BodyStyled>
+                <List/>
+            </BodyStyled>
         </Container>
     )
 }
